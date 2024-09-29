@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Sora", sans-serif;
+}
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #FAFAF9;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.descripcion {
+    width: 50%;
+}
+
+.descripcion i {
+    background-color: #F5C044;
+    color: #ffff00;
+    padding: 10px;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 1rem #D4D4D8);
+}
+
+.descripcion h1 {
+    font-size: 36px;
+    margin-top: 20px;
+}
+
+.descripcion p {
+    font-size: 20px;
+    color: #52525A;
+    margin: 20px 0;
+}
+
+.descripcion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.descripcion ul li {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #52525A;
+    margin-bottom: 10px;
+}
+
+.descripcion ul li img {
+    margin-right: 10px;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.card .cardUno, .card .cardDos {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card .cardDos {
+    justify-content: flex-start;
+}
+
+.item {
+    width: 300px;
+    height: 150px;
+    background-color: #fff;
+    padding: 30px 10px 0 30px;
+    border-radius: 10px;
+}
+
+.item .encabezado {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.item .encabezado .logo {
+    width: 70px;
+    padding: 5px;
+}
+.item .encabezado .star {
+   padding: 0px 0px 3px 5px;
+}
+
+
+.item h2 {
+    font-size: 16px;
+    padding: 10px 5px 0;
+}
+
+.item p {
+    width: 95%;
+    font-size: 16px;
+    color: #52525A;
+    padding: 10px 5px;
+}
+@media (max-width: 640px) {
+    body {
+        width: 100%;
+        display: block;
+        padding: 0 20px;
+    }
+
+    .contenedor {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .descripcion {
+        width: 90%;
+    }
+
+    .descripcion h1 {
+        font-size: 28px;
+        margin-top: 10px;
+    }
+
+    .descripcion p {
+        font-size: 18px;
+    }
+
+    .descripcion ul li {
+        font-size: 12px;
+    }
+
+    .card {
+        width: 90%;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    .card .cardUno {
+        margin-bottom: 50px;
+    }
+
+}
+
